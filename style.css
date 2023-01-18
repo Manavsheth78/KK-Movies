@@ -1,0 +1,177 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.logo{
+    width: 200px;
+    
+}
+h1{
+    font-style: italic;
+    font-family: cursive;
+    color: #4dbf00;
+    
+    
+}
+p{
+    font-style: italic;
+    color: black;
+}
+.navbar {
+  width: 100%;
+  background-color: #000;
+  overflow: auto;
+  right: 10px;
+
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.home {
+  background-color: red;
+  flex: 2;
+  font-family: cursive;
+}
+
+.bollywood {
+  background-color: green;
+  font-family: cursive;
+}
+.hollywood{
+    background-color: saddlebrown;
+    font-family: cursive;
+}
+.web{
+    font-family: cursive;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+}
+.content-container{
+    margin-left: 50px;
+}
+/* .featured-content{
+    height: 50vh;
+    background-color: tomato;
+    padding: 100px;
+    width: 100%;
+} */
+.featured-content{
+    width: 100%;
+    border: 2px white;
+}
+
+.pathan-poster{
+    width: 1100x;
+    border-radius: 2px;
+    padding: 20px;
+    position: inherit;
+    height: 200px;
+    
+}
+.pathan-desc{
+    width: 200px;
+    color: black;
+    
+    text-align :start;
+}
+.pathan-button{
+    background-color: #4dbf00;
+    color: white;
+    padding: 5px 10px 2px 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+
+}
+/* .movie-list-title{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: tomato;
+} */
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.movie-list-item{
+    margin: 20px;
+    position: relative;
+}
+.movie-list-item:hover .content-image
+{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.3;
+}
+
+.movie-list-item:hover .Content-title,
+.movie-list-item:hover .Content-desc,
+.movie-list-item:hover .taaza-khabar-button{
+    opacity: 1;
+}
+.content-image{
+    transition: all 1s ease-in-out;
+    width: 250px;
+    object-fit: cover;
+}
+.Content-title{
+    /* background-color: #333; */
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    /* font-family: cursive; */
+}
+.Content-desc{
+    /* background-color: #333; */
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 207px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    color: white;
+
+}
+.taaza-khabar-button{
+    padding: 8px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 00px;
+    left: 40px;
+    transition: 1s all ease-in-out;
+    opacity: 0;
+    align-items: center;
+    right: 10px;
+
+}
+.arrow{
+    font-size: 120px;
+}
+  
